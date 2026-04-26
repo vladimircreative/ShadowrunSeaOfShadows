@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>МОРЕ ТЕНЕЙ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="scanline"></div>
+
+  <div class="header">
+    <h1>МОРЕ ТЕНЕЙ</h1>
+    <div class="subheader">SEATTLE BBS v0.9.2 • EST. 2072</div>
+  </div>
+
+  <!-- User info moved to top right -->
+  <div class="user-info">
+    <div class="user-details">
+      Logged in as: <strong id="username-display">ECH0</strong><br>
+      Access Level: <span id="user-level-display" class="level-name"></span>
+    </div>
+    <button onclick="logout()" class="logout-btn">[LOGOUT]</button>
+  </div>
+
+  <!-- TOPIC LIST -->
+  <div id="topic-screen" class="board">
+    <div class="topic-list" id="topic-list"></div>
+  </div>
+
+  <!-- MESSAGE VIEW -->
+  <div id="message-screen" class="board message-view">
+    <div class="message-header">
+      <button class="back-btn" onclick="backToTopics()">← BACK TO BOARD</button>
+      <span id="current-topic-title"></span>
+    </div>
+    <div class="messages" id="messages"></div>
+    <div class="footer">
+      S.O.S. BBS © 2081 — The corps own the Matrix. We own the shadows.
+    </div>
+  </div>
+
+  <!-- LOGIN MODAL -->
+  <div id="login-modal">
+    <div class="login-box">
+      <h2>DECKER IDENTIFICATION</h2>
+      <p style="color:var(--dim); margin-bottom:15px;">Enter your handle to jack in:</p>
+      <input type="text" id="login-nick" placeholder="your handle" autocomplete="off" maxlength="20">
+      <button onclick="handleLogin()">JACK IN</button>
+      <p style="font-size:0.8rem; color:#666; margin-top:20px;">New runners automatically start at Red (Lv.1)</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

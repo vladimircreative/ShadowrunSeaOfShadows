@@ -1,5 +1,6 @@
 [
   { "nick": "ECH0", "level": 4 },
   { "nick": "ECHO", "level": 4 },
-  { "nick": "katshot", "level": 9 }
+  { "nick": "katshot", "level": 9 },
+  { "nick": "admin", "level": 1 }
 ]
